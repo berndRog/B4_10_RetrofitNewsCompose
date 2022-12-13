@@ -1,0 +1,60 @@
+buildscript {
+    ext {
+        gradle_version = '7.5.1'
+        android_gradle_plugin_version = '7.3.1'
+        // https://kotlinlang.org/docs/releases.html
+        kotlin_compiler = '1.7.10'
+        kotlin_coroutines = '1.6.4'
+        kotlin_datetime = '0.4.0'
+        // https://developer.android.com/jetpack/androidx/releases/compose-compiler
+        compose_compiler = '1.3.0'
+
+        // https://developer.android.com/jetpack/androidx/releases/activity
+        activity_version = '1.6.1'
+        // https://developer.android.com/jetpack/androidx/releases/compose
+        compose_version = '1.3.1'
+
+//        material_version = '1.6.1'
+        // https://developer.android.com/jetpack/androidx/releases/core
+        core_version = '1.9.0'
+        // https://developer.android.com/jetpack/androidx/releases/lifecycle
+        lifecycle_version = '2.5.1'
+        arch_version = "2.1.0"
+        // https://developer.android.com/jetpack/androidx/releases/navigation
+        nav_version = '2.5.3'
+        // https://google.github.io/accompanist/navigation-animation/
+        nav_animation_version = '0.25.1'
+
+        // https://developer.android.com/jetpack/androidx/releases/room
+        room_version = '2.4.3'
+        room_testing = '2.5.1'
+
+        // retrofit https://square.github.io/retrofit/
+        retrofit_version = '2.9.0'
+
+        // image loading
+        coil_compose_version = '2.2.2'
+
+        // accompanist
+        accompanis_permissions_version = '0.28.0'
+
+        // https://dagger.dev/hilt/
+        hilt_android_version        = '2.44.2'
+        hilt_compiler               = '1.0.0'
+        hilt_navigation_compose     = '1.0.0'
+
+        // https://developer.android.com/training/testing/local-tests          (test)
+        junit_version = '4.13.2'
+        // https://developer.android.com/training/testing/instrumented-tests   (androidTest)
+        androidx_extjUnit = '1.1.3'
+        androidx_espresso = '3.4.0'
+        // https://developer.android.com/jetpack/androidx/releases/test
+    }
+}
+
+plugins {
+    id "com.android.application"        version "$android_gradle_plugin_version" apply false
+    id "com.android.library"            version "$android_gradle_plugin_version" apply false
+    id "org.jetbrains.kotlin.android"   version "$kotlin_compiler" apply false
+    id "com.google.dagger.hilt.android" version "$hilt_android_version" apply false
+}

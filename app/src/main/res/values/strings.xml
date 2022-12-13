@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">B4_10_RetrofitNewsCompose</string>
+  <string name="headlines">Schlagzeilen</string>
+  <string name="searchArticles">Suche Artikel</string>
+  <string name="savedArticles">Gespeicherte Artikel</string>
+  <string name="name">Name</string>
+  <string name="email">Mail</string>
+  <string name="phone">Telefon</string>
+  <string name="save">Speichern</string>
+  <string name="back">Zurück</string>
+</resources>
